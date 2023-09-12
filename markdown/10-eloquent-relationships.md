@@ -34,7 +34,7 @@ public function user()
 // Un article peut avoir plusieurs commentaires
 public function comments()
 {
-    return $this->hasMany(User::class);
+    return $this->hasMany(Comment::class);
 }
 ```
 `Comment`
