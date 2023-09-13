@@ -47,7 +47,7 @@ public function user()
 // Un commentaire n'a qu'un article
 public function article()
 {
-    return $this->belongsTo(User::class);
+    return $this->belongsTo(Article::class);
 }
 ```
 Comme on a respecté les conventions laravel sur les clés étrangères, ou la clé est nommée selon le nom de la table référencée au singulier avec underscore et id : `article_id`, on a rien d'autre à faire.  
